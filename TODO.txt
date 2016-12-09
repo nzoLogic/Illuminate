@@ -1,0 +1,6 @@
+TODO
+
+#PROTOTYPE
+  .assign square div arbritrary key:value data
+  .apply event listener to log success once specific square is clicked first
+  
