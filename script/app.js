@@ -5,10 +5,9 @@ $(document).ready(function() {
         correctOrder = []
     randomIzer =
 
-        $('.square').on('click', function(event) {
-            // console.log($(event.target).data('key').shift());
-            // compareKeys($(event.target).data('key').shift());
-            console.log($(this), userKeys.shift());
+        $('.game-board').on('click', function(event) {
+            
+            console.log(event.target.id === userKeys.shift().id);
         });
     // function Game(sequence){
     //   this.correctOrder = [],
@@ -19,7 +18,6 @@ $(document).ready(function() {
     // var Round = new Game({});
 
     function blink(block) {
-      console.log(block);
         $(block).addClass('lit');
         setTimeout(function() {
             $(block).removeClass('lit');
@@ -33,10 +31,7 @@ $(document).ready(function() {
     function randomizeOrder(parent) {
         var $box = parent.children();
         numberOfIterations($box, 4);
-        //     blink($box);
-        //     console.log(Game);
-        //     console.log($box);
-        //     console.log(correctOrder);
+
     }
     function randomNumber(){
       return Math.floor(Math.random() * $('.game-board').children().length);
