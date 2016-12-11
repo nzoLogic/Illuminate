@@ -4,13 +4,14 @@
 <head>
     <title>Illumination Theory</title>
     <link rel='stylesheet' type='text/css' href='main/main.css'>
+    <!-- Sounds -->
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Handlebars -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.amd.min.js'></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.amd.min.js'></script> -->
     <!-- app.js -->
     <script src='script/app.js'></script>
     <!--Bootstrap  -->
@@ -18,19 +19,37 @@
 
 </head>
 
-<body class='container'>
+<body class='container-fluid'>
     <header class="row">
-        <h1>Illumination Theory</h1>
+        <h1 class='col-xs-4 col-xs-offset-3'><strong class='Illuminate'>Illumination</strong> Theory</h1>
     </header>
-    <section class='row'><h3 class='col-xs-3 col-xs-offset-3'>Level: {{level}} </h3> </section>
-  <main class="row game-board">
-    <div class='square col-xs-4' id='one'></div>
-    <div class='square col-xs-4' id='two'></div>
-    <div class='square col-xs-4' id='three'></div>
-  </main>
-  <section class='row'>
-    <button class='btn btn-primary begin col-xs-3 col-xs-offset-4'>Begin</button>
-  </section>
+    <section class='row'>
+        <h3 class='col-xs-2 col-xs-offset-3'>Level:<span class='insert'></span></h3> </section>
+    <main class="game-board">
+      <section class='row'>
+        <div class='square col-xs-2 col-md-2 col-xs-offset-4' id='one'>
+            <div class='circle'></div>
+        </div>
+        <div class='square col-xs-2 col-md-2' id='two'>
+            <div class='circle' id='three'></div>
+
+        </div>
+      </section>
+        <section class='row'>
+          <div class='square col-xs-2 col-xs-offset-3'>
+            <div class='circle' id='four'></div>
+          </div>
+    </main>
+    <!-- <section class='display'>
+        <h2 class='intro-title'>Welcome to <strong>Illuminate</strong></h2>
+        <h3>A Game Based In <strong>Cognition</strong></h3>
+    </section> -->
+    <section class='row'>
+        <button class='btn btn-primary begin col-xs-3 col-xs-offset-4'>Begin</button>
+    </section>
+    <!-- Handlebars template -->
+    <script id='game-display'>
+    </script>
 </body>
 
 </html>
