@@ -2,25 +2,26 @@
   background-color: #666666;
   }
   .square {
-  border: 2px solid #000;
+  /*border: 2px solid #000;*/
   /*height: 100px;*/
-  width: 90px;
+  /*width: 90px;*/
   transition: .4s;
 
   /*background-color: blue;*/
 }
 
 .circle {
-  margin: 0 auto;
+  margin: 10% auto;
 	width: 100px;
 	height: 100px;
-	background: red;
+	background-color: blue;
+  transition: .4s;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
-
+}
 main {
-  margin-top: 15%;
+  margin-top: 5%;
 }
 .insert {
   transition: .4s;
@@ -51,5 +52,6 @@ area {
   background-color: blue;
 }
 .lit {
-  background-color: red;
+  background-color: #fc9;
+  /*color: red;*/
 }

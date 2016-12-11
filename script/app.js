@@ -6,7 +6,7 @@ var userKeys = [],
     time = 2000;
 $(document).ready(function() {
   ///new children with circles. fix this
-    var children = $('.game-board').children().hasAttribute('id');
+    var children = $('.game-board').find('.circle');
     console.log(children);
     var e = new Audio('./sounds/68443__pinkyfinger__piano-e.wav');
     e.playbackRate = 2.0;
@@ -27,10 +27,11 @@ $(document).ready(function() {
 
     }
 
-    console.log(Illuminate.randomNumber());
+    // console.log(Illuminate.randomNumber());
     function allowUserClick(){
       $('.game-board').on('click', function(event) {
           var selectedId = event.target.id;
+          console.log(selectedId);
           compareKeys(selectedId);
       });
     }
@@ -49,6 +50,12 @@ $(document).ready(function() {
         levelDisplay(level);
         allowUserClick();
         numberOfIterations(iterations);
+    }
+    introLights;
+    function introLights(children){
+      children.forEach(function(child){
+        blink(child);
+      })
     }
 
     function randomNumber() {
@@ -72,13 +79,14 @@ $(document).ready(function() {
     //the hub of functions that is responsible for calling the other integral functions
     function numberOfIterations(n) {
         var child = children[randomNumber()];
+        console.log(child);
         if (n === 0) {
             return;
         }
         sequenceAndUserKeys(child);
         setTimeout(function() {
             blink(child, n);
-            console.log(correctOrder);
+            // console.log(correctOrder);
             return numberOfIterations(n - 1);
         }, time);
     }
