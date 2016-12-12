@@ -1,6 +1,6 @@
 <header>
 <h1><a href='#'>Illuminate</a></h1>
-<p>Illuminate is a game that tracks visual
+<p>Illuminate is a game that tracks rapid visual retention, deductive reasoning, and various other cognitions. Only a prototype now, I hope to, in the future, build out a serious of cognitive levels, themes, and a multiplayer platform.</p>
 </header>
 <h3>Technologies Used</h3>
 <ul>
