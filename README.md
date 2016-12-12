@@ -1,5 +1,5 @@
 <header>
-<h1><a href='#'>Illuminate</a></h1>
+<h1><a href='http://boxer-bridget-37502.bitballoon.com/'>Illuminate</a></h1>
 <p>Illuminate is a game that tracks rapid visual retention, deductive reasoning, and various other cognitions. Only a prototype now, I hope to, in the future, build out a serious of cognitive levels, themes, and a multiplayer platform.</p>
 </header>
 <h3>Technologies Used</h3>
